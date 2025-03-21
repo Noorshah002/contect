@@ -108,9 +108,6 @@ $conn->close();
                 <td><?php echo $row["Subject"]; ?></td>
                 <td><?php echo $row["Message"]; ?></td>
                 <td>
-                    <a href="user-chatting.php?contact_id=<?php echo $row['Contact_Id']; ?>">
-                        <button>Reply</button>
-                    </a>
                     <form method="POST" action="" style="display:inline;">
                         <input type="hidden" name="contact_id" value="<?php echo $row["Contact_Id"]; ?>">
                         <button type="submit" name="delete_message" class="btn-danger">Delete</button>
